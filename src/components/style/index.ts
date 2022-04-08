@@ -204,12 +204,6 @@ export const CustomSelectStyles = {
       borderColor: '#6367f6',
     },
   }),
-  container: (styles: any) => ({
-    ...styles,
-    '&.error': {
-      border: '1px solid #fd2d2d',
-    },
-  }),
   placeholder: (styles: any) => ({
     ...styles,
     color: '#CFD6DE',

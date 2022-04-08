@@ -109,10 +109,11 @@ export const ModalForm = ({ modalIsOpen, setIsOpen, status }: IModalForm) => {
               <Select
                 value={value}
                 ref={ref}
+                classNamePrefix="react-select"
+                className={`react-select-container ${errors?.method ? 'error' : ''}`}
                 styles={CustomSelectStyles}
                 onChange={(val: any) => handleChangeMethod(val, onChange)}
                 options={methods || [{}]}
-                className={errors?.method && 'error'}
               />
             )}
           />
@@ -139,6 +140,9 @@ const FormWrapper = styled.form`
     margin: 16px 0;
     color: #15ff15;
     font-weight: bold;
+  }
+  .react-select-container.error .react-select__control {
+    border: 1px solid #fd2d2d;
   }
 
   .main-block {
