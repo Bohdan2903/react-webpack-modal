@@ -1,0 +1,13 @@
+/.git
+/.vscode
+/.idea
+node_modules/*
+public/*
+src/libs/*
+src/registerServiceWorker.js
+src/settings/LanguageProvider
+src/styles
+src/assets
+src/settings/Configs
+typings/*
+src/types/*

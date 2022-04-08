@@ -1,0 +1,27 @@
+{
+  "presets": ["@babel/preset-typescript", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    "transform-es2015-modules-commonjs",
+    "@babel/plugin-syntax-export-namespace-from",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "fileName": false,
+        "pure": true,
+        "displayName": false
+      }
+    ]
+  ]
+}
