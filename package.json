@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bohdan2903.github.io/react-webpack-modal",
+  "homepage": "https://bohdan2903.github.io/react-webpack-modal/",
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
     "eslint": "^8.4.1",
